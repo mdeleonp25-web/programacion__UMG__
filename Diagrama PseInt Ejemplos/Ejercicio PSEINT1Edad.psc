@@ -1,19 +1,19 @@
 Algoritmo CalcularEdad
-	Definir ANOACT, MesAct, DiaAct Como Entero // nombre Funcion
-	Definir ANONAC, MesNac, DiaNac Como Entero // variables de Fecha Actual
-	Definir Edad Como Entero // Variables de fecha de nacimiento
+	Definir anoACT, mesAct, diaAct Como Entero // nombre Funcion
+	Definir anoNAC, mesNac, diaNac Como Entero // variables de Fecha Actual
+	Definir edad Como Entero // Variables de fecha de nacimiento
 	Escribir 'Ingrese su año de nacimiento: ' // variable de Edad
-	Leer ANONAC
+	Leer anoNac
 	Escribir 'Ingrese su mes de nacimiento: '
-	Leer MesNac
+	Leer mesNac
 	Escribir 'Ingrese su dia de nacimiento: '
-	Leer DiaNac
+	Leer diaNac
 	Escribir 'Ingrese el año actual: '
-	Leer ANOACT
+	Leer anoAct
 	Escribir 'Ingrese el mes actual: '
-	Leer MesAct
+	Leer mesAct
 	Escribir 'Ingrese el dia actual: '
-	Leer DiaAct
+	Leer diaAct
 	Edad <- ANOACT-ANONAC
 	Si MesAct<=MesNac Entonces
 		Si DiaAct<DiaNac Entonces

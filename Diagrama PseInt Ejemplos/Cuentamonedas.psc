@@ -1,49 +1,49 @@
 Algoritmo sin_titulo
-	Definir monedacien Como Entero
-	Definir monedacincuenta Como Entero
-	Definir monedaveinte Como Entero
-	Definir monedadiez Como Entero
-	Definir monedacinco Como Entero
-	Definir monedauno Como Entero
-	Definir cincuentacentavos Como Entero
-	Definir veinticincocentavos Como Entero
-	Definir uncentavo Como Real
+	Definir monedaCien Como Entero
+	Definir monedaCincuenta Como Entero
+	Definir monedaVeinte Como Entero
+	Definir monedaDiez Como Entero
+	Definir monedaCinco Como Entero
+	Definir monedaUno Como Entero
+	Definir cincuentaCentavos Como Entero
+	Definir veinticincoCentavos Como Entero
+	Definir unCentavo Como Real
 	Definir monto Como Entero
 	Definir cantidad Como Real
 	Escribir 'ingrese el monto: '
 	Leer cantidad
 	monto <- trunc(cantidad)
 	cantidad <- cantidad-(trunc(cantidad))
-	monedacien <- 0
-	monedacien <- (monto-(monto MOD 100))/100
+	monedaCien <- 0
+	monedaCien <- (monto-(monto MOD 100))/100
 	monto <- monto MOD 100
-	monedacincuenta <- (monto-(monto MOD 50))/50
+	monedaCincuenta <- (monto-(monto MOD 50))/50
 	monto <- monto MOD 50
-	monedaveinte <- (monto-(monto MOD 20))/20
+	monedaVeinte <- (monto-(monto MOD 20))/20
 	monto <- monto MOD 20
-	monedadiez <- (monto-(monto MOD 10))/10
+	monedaDiez <- (monto-(monto MOD 10))/10
 	monto <- monto MOD 10
-	monedacinco <- (monto-(monto MOD 5))/5
+	monedaCinco <- (monto-(monto MOD 5))/5
 	monto <- monto MOD 5
-	monedauno <- monto/1
+	monedaUno <- monto/1
 	Si cantidad>=0.5 Entonces
-		cincuentacentavos <- 1
+		cincuentaCentavos <- 1
 		cantidad <- cantidad-0.5
 	FinSi
 	Si cantidad>=0.25 Entonces
-		veinticincocentavos <- 1
+		veinticincoCentavos <- 1
 		cantidad <- cantidad-0.25
 	FinSi
 	Si cantidad>0 Entonces
-		uncentavo <- cantidad*100
+		unCentavo <- cantidad*100
 	FinSi
-	Escribir 'billetes de 100: ', monedacien
-	Escribir 'billetes de 50: ', monedacincuenta
-	Escribir 'billetes de 20: ', monedaveinte
-	Escribir 'billetes de 10: ', monedadiez
-	Escribir 'billetes de 5: ', monedacinco
-	Escribir 'billetes de 1: ', monedauno
-	Escribir 'monedas de 0.50: ', cincuentacentavos
-	Escribir 'monedas de 0.25: ', veinticincocentavos
-	Escribir 'monedas de un centavo: ', uncentavo
+	Escribir 'billetes de 100: ', monedaCien
+	Escribir 'billetes de 50: ', monedaCincuenta
+	Escribir 'billetes de 20: ', monedaVeinte
+	Escribir 'billetes de 10: ', monedaDiez
+	Escribir 'billetes de 5: ', monedaCinco
+	Escribir 'billetes de 1: ', monedaUno
+	Escribir 'monedas de 0.50: ', cincuentaCentavos
+	Escribir 'monedas de 0.25: ', veinticincoCentavos
+	Escribir 'monedas de un centavo: ', unCentavo
 FinAlgoritmo
