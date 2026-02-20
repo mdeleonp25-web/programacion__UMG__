@@ -7,20 +7,21 @@ float calcularSuma(float primerNumero, float segundoNumero);
 float calcularResta(float primerNumero, float segundoNumero);
 float calcularProducto(float primerNumero, float segundoNumero);
 float calcularDivision(float primerNumero, float segundoNumero);
+int calcularMod(float primerNumero, float segundoNumero);
 
 int main()
 {
     float numero1 = 0;
     float numero2 =0;
-    float total=0;
+    int opcion=0;
 
 
 
     do {
         cout<<"seleccione la opcio que desea realizar"<<endl;
-        cout<<"1-suma \n2-resta \n3-producto \n4-division \n5-salir"<<endl;
+        cout<<"1-suma \n2-resta \n3-producto \n4-division \n5-mod\n6-salir"<<endl;
         cin>>opcion;
-        if (opcion>=1 && opcion<=4){
+        if (opcion>=1 && opcion<=5){
             cout<<"ingrese el primer numero: ";
             cin>>numero1;
             cout<<"\ningrese el segundo numero: ";
@@ -40,13 +41,16 @@ int main()
                 cout<<"el resultado de la division es: "<<calcularDivision(numero1,numero2)<<endl;
                 break;
             case 5:
-                cout<<"Fin del programa";
+                cout<<"el resultado de la division mod es: "<<calcularMod(numero1,numero2)<<endl;
+                break;
+            case 6:
+                cout<<"Fin del programa"<<endl;
                 break;
             default:
                 cout<<"opcion invalida"<<endl;
                 break;
         }
-    }while (opcion!=5);
+    }while (opcion!=6);
 }
 
 float calcularSuma(float primerNumero, float segundoNumero)
@@ -68,6 +72,16 @@ float calcularDivision(float primerNumero, float segundoNumero)
         return 0;
     }else {
         return primerNumero/segundoNumero;
+    }
+
+}
+int calcularMod(float primerNumero, float segundoNumero)
+{
+    if ((int)segundoNumero==0){
+        cout<<"Error, la operacion no se puede realizar";
+        return 0;
+    }else {
+        return (int)primerNumero%(int)segundoNumero;
     }
 
 }
