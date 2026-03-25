@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1774284242 source:c:\users\moise\documents\laboratorio\archivosc++\projectcalculadora\main.cpp
+	<iostream>
+	"calculadora.h"
+
+1774283974 c:\users\moise\documents\laboratorio\archivosc++\projectcalculadora\include\calculadora.h
+	<string>
+
+1774283987 source:c:\users\moise\documents\laboratorio\archivosc++\projectcalculadora\src\calculadora.cpp
+	"calculadora.h"
+
