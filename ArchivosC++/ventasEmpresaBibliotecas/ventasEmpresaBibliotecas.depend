@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1775700969 source:c:\users\moise\documents\laboratorio\archivosc++\ventasempresabibliotecas\main.cpp
+	<iostream>
+	<unistd.h>
+	"Empresasventa.h"
+
+1775701059 source:c:\users\moise\documents\laboratorio\archivosc++\ventasempresabibliotecas\src\empresasventa.cpp
+	"Empresasventa.h"
+	<iostream>
+	<iomanip>
+
+1775700231 c:\users\moise\documents\laboratorio\archivosc++\ventasempresabibliotecas\include\empresasventa.h
+	<string>
+	<iostream>
+
